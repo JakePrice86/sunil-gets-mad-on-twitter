@@ -18,4 +18,4 @@ console populates with data
 
 Blured cuz Sunil's tweets are private and he doesn't want YOU reading them
 
-![Image of Suns Tweets](https://imgur.com/IGsFys8)
+![Image of Suns Tweets](https://imgur.com/IGsFys8.png)
