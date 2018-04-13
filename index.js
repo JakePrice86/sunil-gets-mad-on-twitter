@@ -23,11 +23,11 @@ getTweets(function () {
 	console.log('done - will look again in 10')
 })
 
-setTimeout(function () {
+let runSystem = setInterval(function () {
 	getTweets(function () {
-		console.log('done - will look again in 10')
+		
 	})
-}, 60000)
+}, 600000)
 
 function getTweets(done)
 {
@@ -60,7 +60,7 @@ function checkTweetIsHappy(tweet)
 	{
 		if (sunsTweets.indexOf(tweet.id) == -1)
 		{
-			sunsTweets = [tweet.id]
+			sunsTweets.push(tweet.id)
 			let theNiceDate = "[" + theDate.toDateString() + "] "
 			if (happyTest.comparative < 0) { console.log(colors.red(theNiceDate + Math.abs(theScore) + " " + text)) }
 			if (happyTest.comparative == 0) { console.log(colors.yellow(theNiceDate + theScore + " " + text)) }
